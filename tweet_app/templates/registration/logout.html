@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block content %}
 <h2>Logout</h2>
-<p>
-    You have been logged out. <a href="{% url 'login' %}">Login</a>
-</p>
+<p>are you sure you want to log out</p>
+<form method="POST" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Logout</button>
+</form>
 
 {% endblock %}

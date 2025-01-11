@@ -3,7 +3,7 @@ from .models import Tweet
 from .forms import TweetForm ,UserRegistrationForm
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import login 
+from django.contrib.auth import login, logout
 
 # Create your views here.
 
@@ -58,3 +58,9 @@ def userRegisteration(request):
     else:
         tweetForm = UserRegistrationForm()
     return render(request, 'registration/register.html', {'tweetForm': tweetForm})
+
+def logout_view(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('tweet_list') 
+    return render(request, 'registration/logout.html')

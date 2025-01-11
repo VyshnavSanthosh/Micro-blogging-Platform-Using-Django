@@ -33,11 +33,23 @@
                         <a class="nav-link" href="{% url 'tweet_list' %}">Home</a>
                     </li>
                     <li class="nav-item nav-spacing">
-                        <button class="btn btn-outline-primary">Login</button>
+                        {% if user.is_authenticated %}
+                        <div class="nav-item nav-spacing">
+                            <span class='navbar-text'>{{ user.username }} </span>
+                            <form method="POST" action="{% url 'logout' %}" class="d-inline">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger ms-4 btn-sm">Logout</button>
+                            </form>
+                        </div>
+                        {% else %}
+                        <a href="{% url 'login' %}">
+                        <button class="btn btn-outline-primary">Login</button></a>
+                        
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-primary">Register</button>
+                        <a href="{% url 'registeration' %}"><button class="btn btn-primary">Register</button></a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
