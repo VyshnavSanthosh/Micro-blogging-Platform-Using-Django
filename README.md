@@ -1,11 +1,11 @@
-# Tweets Django Project
+# Micro-blogging-Platform
 
 ## Overview
-The Tweets Django Project is a web application that allows users to create, view, and manage tweets. It features user authentication, allowing users to register, log in, and log out. The application is built using Django, a high-level Python web framework.
+The Micro-blogging-Platform is a web application that allows users to create, view, and manage blogs. It features user authentication, allowing users to register, log in, and log out. The application is built using Django, a high-level Python web framework.
 
 ## Features
 - User registration and authentication
-- Create, view, edit, and delete tweets
+- Create, view, edit, and delete blogs
 - User profile management
 - Responsive design with Bootstrap for a modern user interface
 
@@ -27,7 +27,7 @@ The Tweets Django Project is a web application that allows users to create, view
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd tweets_django_project1
+   cd blogs_django_project1
    ```
 
 2. **Set up a virtual environment:**
@@ -56,14 +56,11 @@ The Tweets Django Project is a web application that allows users to create, view
 
 ## Usage
 - Users can register for a new account.
-- After logging in, users can create tweets, view their own tweets, and manage their profiles.
+- After logging in, users can create blogs, view their own blogs, and manage their profiles.
 - Users can log out to end their session.
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 - Django documentation for guidance on best practices.
