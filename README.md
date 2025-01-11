@@ -26,7 +26,7 @@ The Micro-blogging-Platform is a web application that allows users to create, vi
 ### Steps to Set Up
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/VyshnavSanthosh/Micro-blogging-Platform-Using-Django.git
    cd blogs_django_project1
    ```
 
